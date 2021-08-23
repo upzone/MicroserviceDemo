@@ -5,7 +5,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
 #COPY ["OrderApi.Messaging.Receive/OrderApi.Messaging.Receive.csproj", "OrderApi.Messaging.Receive/"]
-COPY . .
+COPY OrderApi.Messaging.Receive/. .
 RUN dotnet restore "OrderApi.Messaging.Receive/OrderApi.Messaging.Receive.csproj"
 COPY . .
 WORKDIR "/src/OrderApi.Messaging.Receive"
