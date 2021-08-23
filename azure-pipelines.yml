@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '21a2c4c7-e3f6-4575-b4a1-6c244305d8e9'
   imageRepository: 'upzonemicroservicedemo'
   containerRegistry: 'upzone.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/OrderApi.Messaging.Receive/OrderApi.Messaging.Receive/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/OrderApi.Messaging.Receive/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
